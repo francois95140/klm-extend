@@ -1,5 +1,4 @@
-const totalPaye = 100;
-const distance = 10000;
+
 const statusSelec = document.getElementById("status") as HTMLSelectElement;
 
 // Récupération des éléments du DOM
