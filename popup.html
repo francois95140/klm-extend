@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculateur de Miles et XP</title>
+  <style>
+    body { font-family: Arial, sans-serif; width: 200px; }
+    input, select, button { width: 100%; margin: 5px 0; }
+    #status-section { display: none; }
+  </style>
+</head>
+<body>
+  <h3>Calculateur Flying Blue</h3>
+
+  <!-- Section pour la sélection du statut (visible à la première utilisation) -->
+  <div id="status-section">
+    <label for="status">Sélectionnez votre statut Flying Blue :</label>
+    <select id="status">
+      <option value="ivory">Ivory</option>
+      <option value="silver">Silver</option>
+      <option value="gold">Gold</option>
+      <option value="platinum">Platinum</option>
+    </select>
+    <button id="save-status">Enregistrer le statut</button>
+  </div>
+
+  <!-- Section de calcul des Miles et XP -->
+  <div id="calculator-section">
+    <label for="distance">Distance parcourue (km) :</label>
+    <input type="number" id="distance" placeholder="Entrer la distance">
+
+    <label for="price">Prix (€) :</label>
+    <input type="number" id="price" placeholder="Entrer le prix">
+
+    <button id="calculate">Calculer Miles et XP</button>
+
+    <h4>Résultats :</h4>
+    <p id="result"></p>
+  </div>
+
+  <script src="dist/popup.js"></script> <!-- Charger le script compilé -->
+</body>
+</html>

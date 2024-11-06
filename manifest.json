@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "miles xp extension",
+    "description": "miles and xp calculator",
+    "version": "1.0",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+      }
+    },
+    "permissions": ["storage", "scripting"],
+    "content_scripts": [
+        {
+            "js": ["dist/content.js"],
+            "matches": ["https://www.airfrance.fr/*"]
+            
+        }
+    ]
+  }
